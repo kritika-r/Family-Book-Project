@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Family Book Project</title>
+    </head>
+    <body style="text-align: center;">
+        <h1 style = "text-align:center; color:palevioletred"> Family Book </h1>
+        <img id="Image" style="width:250px;height:300px;"src="https://previews.123rf.com/images/iimages/iimages1206/iimages120600467/13988389-illustration-of-a-cute-little-girl.jpg">
+        <h2 id="Text" style="color:black;"> This is me- Kritika!</h4>
+        <button id="next_button" onclick=update()> Next </button>
+        <script>
+            var image=[ "https://previews.123rf.com/images/iimages/iimages1206/iimages120600467/13988389-illustration-of-a-cute-little-girl.jpg",
+                "https://i.pinimg.com/originals/d7/a4/61/d7a461cd963445402b5f7c3336297d48.jpg",
+                       "https://www.pinclipart.com/picdir/middle/551-5513410_lady-clipart-grocery-shopping-woman-shopping-clipart-free.png",
+                        "https://png.pngtree.com/element_origin_min_pic/16/10/28/0811fed6da6eb55a34e65929b0a686ac.jpg",
+                        "https://png.pngtree.com/png-clipart/20210207/ourlarge/pngtree-cartoon-style-old-lady-with-gray-hair-clipart-png-image_2884599.jpg"];
+                       
+            
+            var text=["This is me- Kritika",
+                "This is my little brother- Samyak!",
+                      "This is my mom- Bhawna!",
+                      "This is my dad- Amit!",
+                      "This is my Grandma- Sushila!"
+                      ];
+var i= 0;
+function update()
+{
+    i++
+    var number = 4
+    if(i > number)
+    {
+        i=0
+    }
+    var updatedImage = image[i];
+    var updatedText = text[i];
+    document.getElementById("Image").src = updatedImage;
+    document.getElementById("Text"). innerHTML = updatedText;
+}
+
+        </script>
+    </body>
+</html>
